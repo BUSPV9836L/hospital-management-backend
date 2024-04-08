@@ -11,6 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/users',require("./routes/userRoutes"));
 app.use('/api/employee',require("./routes/empolyeeRoutes"));
+app.use('/api/medicineStock',require("./routes/medicineStockRoute"));
 app.use(errorHandeler)
 
 app.listen(port,()=>{ 
